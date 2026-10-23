@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Carlos Ealo - Technical Artist</title>
     <meta name="description" content="Luis Carlos Ealo - Game Developer, VR/AR Specialist, Technical Artist y 3D Animator. Portafolio personal.">
+    <base href="/">
     <link rel="icon" type="image/png" href="media/favicon.png">
     <!-- Todo se sirve desde este mismo dominio: sin CDNs, sin FOUC. CSS generado con `npm run build` -->
     <link rel="preload" href="assets/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,12 +20,12 @@
             <img src="media/EaloLogo.png" alt="Ealo Logo" class="h-8 md:h-10 w-auto drop-shadow-lg cursor-pointer transition-transform hover:scale-105" onclick="loadMarkdown('content/home.md')">
         </div>
         <div class="flex gap-6">
-            <button onclick="loadMarkdown('content/home.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/home.md">HOME</button>
-            <button onclick="loadMarkdown('content/portfolio.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/portfolio.md">PORTFOLIO</button>
-            <button onclick="loadMarkdown('content/media.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/media.md">MEDIA</button>
-            <button onclick="loadMarkdown('content/academic.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/academic.md">ACADEMIC</button>
-            <button onclick="loadMarkdown('content/store.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/store.md">STORE</button>
-            <button onclick="loadMarkdown('content/lab.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/lab.md">LAB</button>
+            <a href="/" onclick="event.preventDefault(); loadMarkdown('content/home.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/home.md">HOME</a>
+            <a href="/portfolio" onclick="event.preventDefault(); loadMarkdown('content/portfolio.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/portfolio.md">PORTFOLIO</a>
+            <a href="/media" onclick="event.preventDefault(); loadMarkdown('content/media.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/media.md">MEDIA</a>
+            <a href="/academic" onclick="event.preventDefault(); loadMarkdown('content/academic.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/academic.md">ACADEMIC</a>
+            <a href="/store" onclick="event.preventDefault(); loadMarkdown('content/store.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/store.md">STORE</a>
+            <a href="/lab" onclick="event.preventDefault(); loadMarkdown('content/lab.md')" class="text-sm font-semibold text-gray-400 hover:text-white transition-colors nav-btn" data-file="content/lab.md">LAB</a>
         </div>
        <div class="flex gap-5">
             <a href="mailto:luiscarlosealo@gmail.com" title="Email" class="text-gray-400 hover:text-brand transition-colors text-lg"><i class="fa-solid fa-envelope"></i></a>
@@ -34,12 +35,12 @@
 
     <nav class="md:hidden fixed bottom-4 left-4 right-4 glass rounded-2xl z-50 shadow-2xl">
         <div class="grid grid-cols-6 items-center justify-items-center py-3 px-1">
-            <button onclick="loadMarkdown('content/home.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/home.md"><i class="fa-solid fa-house text-lg"></i></button>
-            <button onclick="loadMarkdown('content/portfolio.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/portfolio.md"><i class="fa-solid fa-gamepad text-lg"></i></button>
-            <button onclick="loadMarkdown('content/media.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/media.md"><i class="fa-solid fa-photo-film text-lg"></i></button>
-            <button onclick="loadMarkdown('content/academic.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/academic.md"><i class="fa-solid fa-graduation-cap text-lg"></i></button>
-            <button onclick="loadMarkdown('content/store.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/store.md"><i class="fa-solid fa-store text-lg"></i></button>
-            <button onclick="loadMarkdown('content/lab.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/lab.md"><i class="fa-solid fa-flask text-lg"></i></button>
+            <a href="/" onclick="event.preventDefault(); loadMarkdown('content/home.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/home.md"><i class="fa-solid fa-house text-lg"></i></a>
+            <a href="/portfolio" onclick="event.preventDefault(); loadMarkdown('content/portfolio.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/portfolio.md"><i class="fa-solid fa-gamepad text-lg"></i></a>
+            <a href="/media" onclick="event.preventDefault(); loadMarkdown('content/media.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/media.md"><i class="fa-solid fa-photo-film text-lg"></i></a>
+            <a href="/academic" onclick="event.preventDefault(); loadMarkdown('content/academic.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/academic.md"><i class="fa-solid fa-graduation-cap text-lg"></i></a>
+            <a href="/store" onclick="event.preventDefault(); loadMarkdown('content/store.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/store.md"><i class="fa-solid fa-store text-lg"></i></a>
+            <a href="/lab" onclick="event.preventDefault(); loadMarkdown('content/lab.md')" class="flex flex-col items-center text-gray-400 hover:text-white transition mobile-nav-btn" data-file="content/lab.md"><i class="fa-solid fa-flask text-lg"></i></a>
         </div>
     </nav>
 
@@ -107,7 +108,35 @@
     </main>
 
     <script>
-        async function loadMarkdown(path) {
+        // Rutas: slug de la URL -> archivo Markdown y título de la pestaña
+        const ROUTES = {
+            '':         { file: 'content/home.md',      title: 'Luis Carlos Ealo - Technical Artist' },
+            'portfolio':{ file: 'content/portfolio.md', title: 'Portfolio | Luis Carlos Ealo' },
+            'media':    { file: 'content/media.md',     title: 'Media | Luis Carlos Ealo' },
+            'academic': { file: 'content/academic.md',  title: 'Academic | Luis Carlos Ealo' },
+            'store':    { file: 'content/store.md',     title: 'Store | Luis Carlos Ealo' },
+            'lab':      { file: 'content/lab.md',       title: 'Lab | Luis Carlos Ealo' }
+        };
+        // Alias en español que redirigen a la ruta canónica
+        const ROUTE_ALIASES = { 'portafolio': 'portfolio', 'academico': 'academic', 'tienda': 'store' };
+
+        function slugFromLocation() {
+            let slug = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '').replace(/^index$/, '').toLowerCase();
+            return ROUTE_ALIASES[slug] || slug;
+        }
+
+        function slugFromFile(path) {
+            return Object.keys(ROUTES).find(k => ROUTES[k].file === path) || '';
+        }
+
+        let loadCounter = 0;
+
+        async function loadMarkdown(path, pushState = true) {
+            const slug = slugFromFile(path);
+            const url = slug ? '/' + slug : '/';
+            if (pushState && location.pathname !== url) history.pushState({ slug }, '', url);
+            document.title = ROUTES[slug].title;
+            const myLoad = ++loadCounter;
             const contentArea = document.getElementById('content-area');
             const heroSection = document.getElementById('hero-section');
             const featuredSection = document.getElementById('featured-section');
@@ -133,9 +162,12 @@
             try {
                 const response = await fetch(path);
                 if (!response.ok) throw new Error('Archivo no encontrado');
+                // Si el hosting devuelve index.html para un archivo inexistente, no es Markdown
+                if ((response.headers.get('content-type') || '').includes('text/html')) throw new Error('Archivo no encontrado');
                 const text = await response.text();
                 
                 setTimeout(() => {
+                    if (myLoad !== loadCounter) return; // se navegó a otra sección mientras tanto
                     const rawHtml = marked.parse(text, { breaks: true });
                     
                     if (path.includes('portfolio.md') || path.includes('media.md') || path.includes('academic.md') || path.includes('store.md') || path.includes('lab.md')) {
@@ -276,6 +308,7 @@
                 }, 300);
             } catch (error) {
                 setTimeout(() => {
+                    if (myLoad !== loadCounter) return;
                     contentArea.innerHTML = `<h2 class="text-white font-bold">Contenido en preparación</h2>`;
                     contentArea.style.opacity = 1;
                 }, 300);
@@ -288,7 +321,17 @@
             else nav.classList.remove('bg-black/40', 'shadow-lg');
         });
 
-        window.onload = () => loadMarkdown('content/home.md');
+        // Carga inicial según la URL (/portfolio, /lab...). Si no existe, vuelve a home.
+        function loadFromLocation() {
+            const slug = slugFromLocation();
+            const route = ROUTES[slug] || ROUTES[''];
+            if (!ROUTES[slug]) history.replaceState({ slug: '' }, '', '/');
+            else if (location.pathname !== (slug ? '/' + slug : '/')) history.replaceState({ slug }, '', slug ? '/' + slug : '/');
+            loadMarkdown(route.file, false);
+        }
+
+        window.onload = loadFromLocation;
+        window.addEventListener('popstate', loadFromLocation);
 
         // FUNCION PARA CREAR LA VENTANA FLOTANTE (LIGHTBOX)
         window.openLightbox = function(src) {

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx -y serve -s . -l 8080",
     "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
     "watch": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
   },
